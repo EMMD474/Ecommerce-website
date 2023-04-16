@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="font-6/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
+</head>
+<body>
+    <div id="container" class="display">
+        <div class="close">
+            <span class="exit" onclick="exit()">x</span>
+        </div>
+        <form  method="post" id="form">
+            <div class="head">
+                <h2>Sign Up!!</h2>
+            </div>
+        <div class="logo">
+            <i class="fa-solid fa-user"></i>
+        </div><br>
+        <label for="username">Username</label>
+        <div class="icon">
+            <input type="text" placeholder="Username" id="username" >
+            <i class="fa-regular fa-user"></i>
+            <div class="error">
+                <p id="user_error"></p>
+            </div>
+        </div>
+        <label for="email">Email</label>
+        <div class="icon">
+            <input type="email" placeholder="Email" id="email">
+           <i class="fa-solid fa-envelope"></i>
+           <div class="error">
+            <p id="email_error"></p>
+        </div>
+        </div>
+        
+        <label for="psw">Password</label>
+        <div class="icon">
+            <input type="password" placeholder="Password" id="password">
+            <i class="fa-solid fa-lock"></i>
+            <div class="error">
+                <p id="password_error"></p>
+            </div>
+        </div>
+        <label for="psw">Confirm Password</label>
+        <div class="icon">
+            <input type="password" placeholder="Confirm Password" id="password2">
+            <i class="fa-solid fa-lock"></i>
+        </div>
+        <div class="btn">
+            <button type="submit" onclick="checkInput()">Sign Up</button>
+        </div>
+        <div class="btn2">
+            <a href ="login.html">Already have an Account <span>Login</span> <a>
+
+        </div>
+        </form>
+    </div>
+
+
+</body>
+</html>
